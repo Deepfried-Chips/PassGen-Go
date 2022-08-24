@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	passwordGenerator "github.com/theTardigrade/golang-passwordGenerator"
 	"golang.design/x/clipboard"
 	"os"
@@ -45,6 +46,7 @@ func main() {
 	if err2 != nil {
 		return
 	}
+	fmt.Printf("Copied to Clipboard: %s\n", generate)
 	clipboard.Write(clipboard.FmtText, []byte(generate))
 	
 	fmt.Printf("Copied to clipboard: %s", generate)
