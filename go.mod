@@ -1,4 +1,4 @@
-module FunkyPassword
+module github.com/Deepfried-Chips/PassGen-Go
 
 go 1.19
 
