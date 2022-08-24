@@ -48,8 +48,6 @@ func main() {
 	}
 	fmt.Printf("Copied to Clipboard: %s\n", generate)
 	clipboard.Write(clipboard.FmtText, []byte(generate))
-	
-	fmt.Printf("Copied to clipboard: %s", generate)
 
 	os.Exit(0)
 }
